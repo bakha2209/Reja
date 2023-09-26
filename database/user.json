@@ -7,7 +7,15 @@
   "languages": ["Uzbek","Korean","English"],
   "skills": ["Html", "Css","Js","NodeJS","Python"],
   "extra_skills": ["Bootstrap,Materialize","Styling,Sass","Django,Flask","GIT Knowledge"],
-  "work_place": "Nowhere",
+  "work_place": "Software Engineer in Seoul",
   "freelance": "Available",
-  "my_services": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum"
+  "my_services": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
+  "web_development": "Blog,E-commerce",
+  "ui_design": "Mobile App,Website Design",
+  "sound_design": "Voice Over, Beat Making",
+  "game_design": "Character Design,Props &Objects",
+  "photography": "Portrait,Product Photography",
+  "advertising": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. ",
+  "work_p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus."
+
 }

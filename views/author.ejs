@@ -160,19 +160,46 @@
         <div class="marginer"></div>
       </div>
       <div class="midd_frame">
-        <div class="midd_up"></div>
+        <div class="midd_up">
+          <div class="workplace"><h1><%=user.work_place%></h1></div>
+          <div class="workplace_p"><%=user.work_p%></div>
+          <div class="work_pic"><img src="box_images/your_image.svg" alt=""></div>
+        </div>
         <div class="midd_down">
           <div class="my_services"><h1>My Services</h1></div>
           <div class="armet_minim"><p><%=user.my_services%></p></div>
           <div class="rectangle_box">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
+            <div class="rectangle">
+              <div class="small_boxes"><img src="box_images/coding.svg" alt=""></div>
+              <div class="small_boxes_1"><h1>Web Development</h1></div>
+              <div class="small_boxes_2"><%=user.web_development%></div>
+            </div>
+            <div class="rectangle">
+              <div class="small_boxes"><img src="box_images/illustration.svg" alt=""></div>
+              <div class="small_boxes_1"><h1>UI/UX Design</h1></div>
+              <div class="small_boxes_2"><%=user.ui_design%></div>
+            </div>
+            <div class="rectangle">
+              <div class="small_boxes"><img src="box_images/Microphone.svg" alt=""></div>
+              <div class="small_boxes_1"><h1>Sound Design</h1></div>
+              <div class="small_boxes_2"><%=user.sound_design%></div>
+            </div>
           </div>
           <div class="rectangle_box">
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
-            <div class="rectangle"></div>
+            <div class="rectangle">
+              <div class="small_boxes"><img src="box_images/game-development.svg" alt=""></div>
+              <div class="small_boxes_1"><h1>Game Design</h1></div>
+              <div class="small_boxes_2"><%=user.game_design%></div>
+            </div>
+            <div class="rectangle">
+              <div class="small_boxes"><img src="box_images/Photographer.svg" alt=""></div>
+              <div class="small_boxes_1"><h1>Photography</h1></div>
+              <div class="small_boxes_2"><%=user.photography%></div>
+            </div>
+            <div class="rectangle">
+              <div class="small_boxes_1"><h1>Advertising</h1></div>
+              <div class="small_boxes_3"><p><%=user.advertising%></p></div>
+            </div>
           </div>
         </div>
         

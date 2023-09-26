@@ -93,10 +93,67 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.midd_down .small_boxes {
+  width: 68px;
+  height: 68px;
+  margin-top: 28px;
+  margin-bottom: 13px;
+}
+
+.small_boxes .small_boxes_1 {
+  width: 158px;
+  height: 22px;
+  color:  #2B2B2B;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%; 
+  text-transform: capitalize;
+}
+
+.small_boxes .small_boxes_2 {
+  width: 134px;
+  height: 24px;
+  color:  #767676;
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: 'calt' off;
+   margin-top: 5px; 
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  text-transform: capitalize;
+}
+
+.small_boxes .small_boxes_3 {
+  width: 260px;
+  height: 78px;
+  color: var(--Paragraph-Font, #767676);
+  text-align: center;
+  font-kerning: none;
+  font-feature-settings: 'calt' off;
+  /* P-15px paragraph */
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+  text-transform: capitalize;
+}
 .rectangle_box .rectangle {
   width: 310px;
   height: 225px;
   background:  #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_frame .right_frame {
@@ -398,5 +455,43 @@
   background: #ffb400;
 }
 
+.midd_up .workplace {
+  position: absolute;
+  width: 499.514px;
+  height: 116.744px;
+  margin-top: 99.15px;
+  margin-bottom: 238px;
+  margin-left: 56px;
+  color: var(--Black, #2B2B2B);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123.6%; /* 59.328px */
+}
 
+.midd_up .workplace_p {
+  width: 424.437px;
+  height: 85.612px;
+  color: var(--Paragraph-Font, #767676);
+  font-kerning: none;
+  font-feature-settings: 'calt' off;
+  /* H6 - 16px */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: capitalize;
+  margin-left: 61px;
+  margin-top: 17px;
+}
+
+.work_pic {
+  
+  width: 326.055px;
+  height: 446.633px;
+  margin-right: 61px;
+  margin-top: 16px;
+}
 
