@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+  
+  <div class="frame">
+    <div class="main_frame">
+      <div class="left_frame">
+        <div class="left_1">
+          <div class="left_1_pic">
+            <img src="images/profile.png" 
+            width="156px"
+            height="142px" alt=""
+            />
+          </div>
+          <div class="left_1_name">
+            <%=user.name%>
+          </div>
+          <div class="left_1_profession"><%=user.profession%></div>
+          <div class="left_1_icon">
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/facebook.svg" class="icon-1"/>
+              </div>
+            </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/instagram.svg" class="icon-1"/>
+              </div>
+            </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/linkedin.svg" class="icon-1"/>
+              </div>
+            </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/youtube.svg" class="icon-1"/>
+              </div>
+            </a>
+            <a class="link_href" href="">
+              <div class="icon">
+                <img src="icon/dribbble.svg" class="icon-1"/>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="marginer"></div>
+        <div class="left_2">
+          <div class="left_2_bio">
+            <div class="prop_color" style="width: 47px;">
+              <div class="prop_word">Age:</div>
+            </div>
+            <div class="prop_user"><%=user.age%></div>
+          </div>
+          <div class="left_2_bio">
+            <div class="prop_color" style="width: 89px;">
+              <div class="prop_word">Residence:</div>
+            </div>
+            <div class="prop_user"><%=user.residence%></div>
+          </div>
+          <div class="left_2_bio">
+            <div class="prop_color" style="width: 85px;">
+              <div class="prop_word">Freelance:</div>
+            </div>
+            <div class="prop_freelance"><%=user.freelance%></div>
+          </div>
+          <div class="left_2_bio">
+            <div class="prop_color" style="width: 75px;">
+              <div class="prop_word">Address:</div>
+            </div>
+            <div class="prop_user"><%=user.address%></div>
+          </div>
+        </div>
+        <div class="marginer"></div>
+        <div class="left_3">
+          <div class="left_titles">Languages</div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.languages[0]%></div>
+            <div class="lan_ski_prop">100%</div>
+          </div>
+          <div class="line_svg"><img src="images/line100.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.languages[2]%></div>
+            
+            <div class="lan_ski_prop">80%</div>
+          </div>
+          <div class="line_svg"><img src="images/line80.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.languages[1]%></div>
+            <div class="lan_ski_prop">60%</div>
+          </div>
+          <div class="line_svg"><img src="images/line60.svg" alt=""/></div>
+        </div> 
+        <div class="marginer"></div>
+        <div class="left_4">
+          <div class="left_titles">Skills</div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.skills[0]%></div>
+            <div class="lan_ski_prop">90%</div>
+          </div>
+          <div class="line_svg"><img src="images/line90.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.skills[1]%></div>
+            <div class="lan_ski_prop">85%</div>
+          </div>
+          <div class="line_svg"><img src="images/line85.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.skills[2]%></div>
+            <div class="lan_ski_prop">80%</div>
+          </div>
+          <div class="line_svg"><img src="images/line80.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.skills[3]%></div>
+            <div class="lan_ski_prop">75%</div>
+          </div>
+          <div class="line_svg"><img src="images/line75.svg" alt=""/></div>
+          <div class="lan_ski">
+            <div class="lan_ski_prop"><%=user.skills[4]%></div>
+            <div class="lan_ski_prop">85%</div>
+          </div>
+          <div class="line_svg"><img src="images/line85.svg" alt=""/></div>
+
+        </div>
+        <div class="marginer"></div>
+        <div class="left_5">
+          <div class="left_titles">Extra Skills</div>
+          <div class="left_extra">
+            <div class="icon_square">
+              <img src="icon/icon_square.svg"  alt="">
+            </div>
+            <div class="user_extra_skills"><%=user.extra_skills[0]%></div>
+          </div>
+          <div class="left_extra">
+            <div class="icon_square">
+              <img src="icon/icon_square.svg"  alt="">
+            </div>
+            <div class="user_extra_skills"><%=user.extra_skills[1]%></div>
+          </div>
+          <div class="left_extra">
+            <div class="icon_square">
+              <img src="icon/icon_square.svg"  alt="">
+            </div>
+            <div class="user_extra_skills"><%=user.extra_skills[2]%></div>
+          </div>
+          <div class="left_extra">
+            <div class="icon_square">
+              <img src="icon/icon_square.svg"  alt="">
+            </div>
+            <div class="user_extra_skills"><%=user.extra_skills[3]%></div>
+          </div>
+        </div>
+        <div class="marginer"></div>
+      </div>
+      <div class="midd_frame">
+        <div class="midd_up"></div>
+        <div class="midd_down">
+          <div class="my_services"><h1>My Services</h1></div>
+          <div class="armet_minim"><p><%=user.my_services%></p></div>
+          <div class="rectangle_box">
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+          </div>
+          <div class="rectangle_box">
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+            <div class="rectangle"></div>
+          </div>
+        </div>
+        
+       
+      </div>
+      <div class="right_frame">
+        <div class="contrast">
+          <img src="icon/contrast.svg" alt="">
+        </div>
+        <div class="union"><img src="icon/union.svg" alt=""></div>
+        <a class="link_href" href="">
+          <div class="ellipse_10">
+            <img src="box_images/Home.svg" class="icon-1"/>
+          </div>
+        </a>
+        <a class="link_href" href="">
+          <div class="ellipse_10">
+            <img src="box_images/file-code.svg" class="icon-1"/>
+          </div>
+        </a>
+        <a class="link_href" href="">
+          <div class="ellipse_10">
+            <img src="box_images/cv.svg" class="icon-1"/>
+          </div>
+        </a>
+        <a class="link_href" href="">
+          <div class="ellipse_10">
+            <img src="box_images/Portfolio.svg" class="icon-1"/>
+          </div>
+        </a>
+        <a class="link_href" href="">
+          <div class="ellipse_10">
+            <img src="box_images/Blog.svg" class="icon-1"/>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
