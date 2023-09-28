@@ -42,7 +42,10 @@
   margin-bottom: 57px;
   width: 971px;
   height: 455px;
-  background:  #FFF;  
+  background:  #FFF; 
+  display: flex;
+  position: relative;
+  flex-direction: row; 
 }
 
 .midd_frame .midd_down {
@@ -50,7 +53,7 @@
   display: flex;
   flex-direction: column;
   width: 970px;
-  height: 653px;
+  height: 453px;
   align-items: center;
   margin-top: 100px;
 }
@@ -456,11 +459,12 @@
 }
 
 .midd_up .workplace {
-  position: absolute;
+  position: relative;
+  display: flex;
   width: 499.514px;
   height: 116.744px;
   margin-top: 99.15px;
-  margin-bottom: 238px;
+  margin-bottom: 10px;
   margin-left: 56px;
   color: var(--Black, #2B2B2B);
   font-family: Inter;
@@ -471,7 +475,8 @@
 }
 
 .midd_up .workplace_p {
-  position: absolute;
+  position: relative;
+  display: flex;
   width: 424.437px;
   height: 85.612px;
   color: var(--Paragraph-Font, #767676);
@@ -485,21 +490,48 @@
   line-height: 24px; /* 150% */
   text-transform: capitalize;
   margin-left: 61px;
-  margin-top: 233px;
+  margin-top: 7px;
 }
 
 .work_pic {
-  position: absolute;
+  position: relative;
   width: 326.055px;
   height: 446.633px;
   margin-right: 61px;
   margin-top: 16px;
-  margin-left: 583px;
+  
 }
 
 .midd_up_1 {
-  position: relative;
   display: flex;
+  position: relative;
+  
   flex-direction: column;
+  width: 583.3px;
+  height: 454px;
 }
 
+.hire_me {
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: var(--Yellow, #FFB400);
+  position: relative;
+  width: 154px;
+  height: 51px;
+  margin-left: 56.07px;
+
+
+}
+
+.midd_up .iconchalar {
+  display: flex;
+  position: absolute;
+  width: 16.016px;
+  height: 15.566px;
+  stroke-width: 2px;
+}
