@@ -84,15 +84,55 @@
 // }
 // run()
 
-function getReverse(hello) {
-    letter_text = hello.split("");
+// function getReverse(hello) {
+//     letter_text = hello.split("");
     
-    const new_list=[]
-    letter_text.forEach(ele => {
-      new_list.unshift(ele);
-    });
-    console.log(new_list.join(""))
+//     const new_list=[]
+//     letter_text.forEach(ele => {
+//       new_list.unshift(ele);
+//     });
+//     console.log(new_list.join(""))
+// }
+
+// getReverse("world");
+
+//Secar challenge
+
+const alphabet = "abcdefghijklmnopqrstuvwxyz";
+let code = 2;
+
+
+function decodeMessage(message,secret) {
+  const letter_message = message.split("");
+  const letter_alphabet = alphabet.split("");
+  const new_list =[]
+  for (value of letter_message) {
+    if (letter_alphabet.includes(value)) {
+      //console.log(letter_alphabet.indexOf(value));
+      const new_index = letter_alphabet.indexOf(value) + secret;
+      if (new_index>25) {
+        const new_index_1 = new_index - 26;
+        new_list.push(letter_alphabet[new_index_1])
+      }else if(new_index<0){
+        const new_index_2 = new_index + 26;
+        new_list.push(letter_alphabet[new_index_2]) 
+      }else {new_list.push(letter_alphabet[new_index])};
+      
+    } else {new_list.push(value)}
+  }
+  return new_list.join("")
 }
 
-getReverse("world");
+
+
+let message = "yes, how are you doing? my general!";
+let secret_msg = decodeMessage(message,code);
+console.log("Secret =>", secret_msg)
+
+setTimeout(() => {
+  code*=-1;
+  const message_encoded = decodeMessage(secret_msg,code);
+  console.log("Original =>", message_encoded)
+},5000)
+
 
