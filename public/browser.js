@@ -30,3 +30,48 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
         console.log("Iltimos qaytadan urinib koring")
       });
 });
+
+document.addEventListener("click", function(e){
+  // dlete oper
+  //console.log(e) bu brauzerda targetlarni chiqarib beradi
+  console.log(e.target)
+  if (e.target.classList.contains("delete-me")) {
+    //alert("siz delete tugmasini bosdingiz");
+    if (confirm("aniq ochirmoqchimisiz?")) {
+      axios
+        .post("/delete-item", {id: e.target.getAttribute("data-id")})
+        .then((resonse) => {
+          console.log(resonse.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log("Iltimos qaytadan urinib koring")
+        })
+    }
+  }
+  // edit oper
+  if (e.target.classList.contains("edit-me")) {
+    let userInput = prompt(
+      "Ozgartirish kiriting",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML);
+    if (userInput) {
+      axios
+        .post("/edit-item", {id: e.target.getAttribute("data-id"), new_input: userInput})
+        .then(response => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text").innerHTML = userInput;
+        })
+        .catch(err => {
+          console.log("Iltimos qaytadan urinib koring")
+        })
+    }
+  }
+});
+
+document.getElementById("clean-all").addEventListener("click", function() {
+  axios.post("/delete-all", {delete_all: true}).then(response => {
+    alert(response.data.state);
+    document.location.reload()
+  })
+})
