@@ -69,9 +69,14 @@ document.addEventListener("click", function(e){
   }
 });
 
-document.getElementById("clean-all").addEventListener("click", function() {
+document.getElementById("clean-all").addEventListener("click", function(e) {
+  console.log(e.target.parentElement)
   axios.post("/delete-all", {delete_all: true}).then(response => {
     alert(response.data.state);
-    document.location.reload()
+    //document.location.reload()
+    e.target.parentElement.querySelector("#item-list").innerHTML = "";
+    
+    //document.getElementById("item-list").innerHTML= "";
+   
   })
 })
